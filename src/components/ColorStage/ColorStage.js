@@ -9,24 +9,26 @@ function ColorStage() {
 
   return (
     <div className='color-stage'>
-      <div className='color-additions'>
+      <div className='color-boxes-group'>
         <div className='box' style={{background: `rgb(${colorValues.rgb.red},0,0)`}}>
+          </div>
+          <AiIcons.AiOutlinePlus className='icon'/>
+          <div className='box' style={{background: `rgb(0,${colorValues.rgb.green},0)`}}>
+          </div>
+          <AiIcons.AiOutlinePlus className='icon'/>
+          <div className='box' style={{background: `rgb(0,0,${colorValues.rgb.blue})`}}>
+          </div>
+          <TbIcons.TbEqual className='icon'/>
         </div>
-        <AiIcons.AiOutlinePlus className='icon'/>
-        <div className='box' style={{background: `rgb(0,${colorValues.rgb.green},0)`}}>
+        <div 
+          className='platform'
+          style={{
+            background: `rgb(${colorValues.rgb.red}, ${colorValues.rgb.green}, ${colorValues.rgb.blue})`
+          }}
+        ></div>
+        <div className='author'>
+          <span>Sihle Mkaza &copy; 2022</span>
         </div>
-        <AiIcons.AiOutlinePlus className='icon'/>
-        <div className='box' style={{background: `rgb(0,0,${colorValues.rgb.blue})`}}>
-        </div>
-        <TbIcons.TbEqual className='icon'/>
-      </div>
-      <div 
-        className='platform'
-        style={{
-          background: `rgb(${colorValues.rgb.red}, ${colorValues.rgb.green}, ${colorValues.rgb.blue})`
-        }}
-      >
-      </div>
     </div>
   )
 }

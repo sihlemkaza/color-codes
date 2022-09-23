@@ -1,0 +1,33 @@
+@import '../../globalColors.scss';
+
+.color-stage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .platform {
+    background: $white;
+    width: 600px;
+    height: 400px;
+  }
+
+  .color-additions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon {
+    margin: 0 10px;
+  }
+}
