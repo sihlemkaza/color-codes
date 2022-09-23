@@ -6,7 +6,6 @@ import SideNav from './components/SideNav/SideNav';
 function App() {
   return (
     <div className="app">
-      <TopNav/>
       <div className='side-main'>
         <SideNav/>
         <ColorStage/>
