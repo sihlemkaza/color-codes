@@ -27,7 +27,10 @@ function ColorStage() {
           }}
         ></div>
         <div className='author'>
-          <span>Sihle Mkaza &copy; 2022</span>
+          <a 
+            href='https://sihlemkaza.com' target="_blank" rel="noreferrer"
+            className='author-link'
+          >Sihle Mkaza </a> &copy; 2022
         </div>
     </div>
   )
