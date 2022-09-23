@@ -1,14 +1,13 @@
 import './App.scss';
 import ColorStage from './components/ColorStage/ColorStage';
-import TopNav from './components/TopNav/TopNav';
-import SideNav from './components/SideNav/SideNav';
+import SidePanel from './components/SidePanel/SidePanel';
+
 
 function App() {
   return (
     <div className="app">
-      <TopNav/>
-      <div className='side-main'>
-        <SideNav/>
+      <div className='main'>
+        <SidePanel/>
         <ColorStage/>
       </div>
     </div>

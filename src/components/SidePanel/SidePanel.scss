@@ -1,0 +1,147 @@
+.side-panel {
+  width: 350px;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .color-type-title {
+      font-size: 2rem;
+      margin-top: 20px;
+
+      @media screen and (max-width: 342px) {
+        margin-top: 10px;
+      }     
+    }
+
+
+    .color-code-text {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+
+    .copy-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 5px;
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 342px) {
+        margin-bottom: 5px;
+      }  
+    }
+    .copy-text {
+      font-size: 0.875rem;
+    }
+
+    .copy-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .color-input-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .rgb-value-input {
+      text-align: right;
+      width: 50px;
+      height: 20px;
+      border: 1px solid #C0BFC6;
+    }
+
+    .rgb-block {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .block-input-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rgb-slider {
+      margin-top: 8px;
+      width: 240px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 912px) {
+        width: 210px;
+      }
+
+      @media screen and (max-width: 630px) {
+        width: 200px;
+      }
+
+      @media screen and (max-width: 560px) {
+        width: 160px;
+       }
+    }
+  }
+
+  .divider {
+    background: #EEEEEE;
+    height: 1px;
+    width: 90%;
+    align-self: center;
+
+    @media screen and (max-width: 560px) and (min-width: 342px) {
+      height: 90%;
+      width: 1px;
+    }
+  }
+
+  .hex-inputs-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+
+    .hex-input {
+      width: 40px;
+      height: 24px;
+      border: 1px solid #C0BFC6;
+      color: black;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+
+    .container {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+
+  @media screen and (max-width: 342px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+    .container {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}
